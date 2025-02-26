@@ -29,8 +29,8 @@ jobs:
           name: Deploy to Railway App
           command: |
             cd bankchurn-api 
-            railway up --service=hopeful-eagerness
-            railway up --detach
+            railway up --service=hopeful-eagerness --detach --yes
+            # railway up --detach
 
 tags_only: &tags_only
   filters:
